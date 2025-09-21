@@ -51,9 +51,9 @@ jobs:
           docker push 160487/multi-server-k8s-gh:latest
           docker push 160487/multi-worker-k8s-gh:latest
           
-          docker push 160487/multi-client-k8s-gh:{{ env.SHA }}
-          docker push 160487/multi-server-k8s-gh:{{ env.SHA }}
-          docker push 160487/multi-worker-k8s-gh:{{ env.SHA }}
+          docker push 160487/multi-client-k8s-gh:${{ env.SHA }}
+          docker push 160487/multi-server-k8s-gh:${{ env.SHA }}
+          docker push 160487/multi-worker-k8s-gh:${{ env.SHA }}
 
       - name: Apply
         run: |-
